@@ -10,6 +10,8 @@ while not finished:
         finished = True
     else:
         name_list.append(student_name)
-view = input("Please enter the numbers on the list you would wish to see: ")
-for index in range(len(name_list[view])):
+display1 = int(input("Please enter the first number you wish to see here in the list: "))
+display2 = int(input("Please enter the second number you wish to see in the list: "))
+for index in range(display1, display2):
     print("Name {0} is {1}".format(index + 1, name_list[index]))
+
